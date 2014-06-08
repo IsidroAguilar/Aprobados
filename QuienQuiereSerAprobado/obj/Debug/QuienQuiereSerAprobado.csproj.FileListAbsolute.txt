@@ -6,3 +6,4 @@ c:\users\isidro\documents\visual studio 2013\Projects\QuienQuiereSerAprobado\Qui
 c:\users\isidro\documents\visual studio 2013\Projects\QuienQuiereSerAprobado\QuienQuiereSerAprobado\bin\Debug\QuienQuiereSerAprobado.pdb
 c:\users\isidro\documents\visual studio 2013\Projects\QuienQuiereSerAprobado\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.exe
 c:\users\isidro\documents\visual studio 2013\Projects\QuienQuiereSerAprobado\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.pdb
+C:\Users\Eduardo\Documents\Aprobados\QuienQuiereSerAprobado\bin\Debug\QuienQuiereSerAprobado.exe.config
