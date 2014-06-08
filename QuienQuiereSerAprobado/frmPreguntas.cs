@@ -19,7 +19,7 @@ namespace QuienQuiereSerAprobado
 
         private void frmPreguntas_Load(object sender, EventArgs e)
         {
-            this.BackgroundImage = new Bitmap("Diseño/frmPreguntas.jpg");
+            
         }
     }
 }

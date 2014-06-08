@@ -28,49 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnRespuesta1 = new System.Windows.Forms.Button();
+            this.btnRespuesta2 = new System.Windows.Forms.Button();
+            this.btnRespuesta3 = new System.Windows.Forms.Button();
+            this.btnRespuesta4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnRespuesta1
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(32, 221);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnRespuesta1.BackColor = System.Drawing.Color.Transparent;
+            this.btnRespuesta1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRespuesta1.Location = new System.Drawing.Point(32, 221);
+            this.btnRespuesta1.Name = "btnRespuesta1";
+            this.btnRespuesta1.Size = new System.Drawing.Size(75, 23);
+            this.btnRespuesta1.TabIndex = 0;
+            this.btnRespuesta1.Text = "Respuesta1";
+            this.btnRespuesta1.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnRespuesta2
             // 
-            this.button2.Location = new System.Drawing.Point(32, 290);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnRespuesta2.Location = new System.Drawing.Point(32, 290);
+            this.btnRespuesta2.Name = "btnRespuesta2";
+            this.btnRespuesta2.Size = new System.Drawing.Size(75, 23);
+            this.btnRespuesta2.TabIndex = 1;
+            this.btnRespuesta2.Text = "Respuesta2";
+            this.btnRespuesta2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnRespuesta3
             // 
-            this.button3.Location = new System.Drawing.Point(182, 221);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnRespuesta3.Location = new System.Drawing.Point(182, 221);
+            this.btnRespuesta3.Name = "btnRespuesta3";
+            this.btnRespuesta3.Size = new System.Drawing.Size(75, 23);
+            this.btnRespuesta3.TabIndex = 2;
+            this.btnRespuesta3.Text = "Respuesta3";
+            this.btnRespuesta3.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnRespuesta4
             // 
-            this.button4.Location = new System.Drawing.Point(182, 290);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnRespuesta4.Location = new System.Drawing.Point(182, 290);
+            this.btnRespuesta4.Name = "btnRespuesta4";
+            this.btnRespuesta4.Size = new System.Drawing.Size(75, 23);
+            this.btnRespuesta4.TabIndex = 3;
+            this.btnRespuesta4.Text = "Respuesta4";
+            this.btnRespuesta4.UseVisualStyleBackColor = true;
             // 
             // frmPreguntas
             // 
@@ -78,10 +78,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(652, 402);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnRespuesta4);
+            this.Controls.Add(this.btnRespuesta3);
+            this.Controls.Add(this.btnRespuesta2);
+            this.Controls.Add(this.btnRespuesta1);
             this.Name = "frmPreguntas";
             this.Text = "frmPreguntas";
             this.Load += new System.EventHandler(this.frmPreguntas_Load);
@@ -91,10 +91,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnRespuesta1;
+        private System.Windows.Forms.Button btnRespuesta2;
+        private System.Windows.Forms.Button btnRespuesta3;
+        private System.Windows.Forms.Button btnRespuesta4;
 
     }
 }

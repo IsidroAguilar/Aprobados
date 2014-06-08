@@ -98,6 +98,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Diseño\frmPreguntas.jpg" />
+    <None Include="Resources\PersonajeAzul.PNG" />
+    <None Include="Resources\PersonajeVerde.png" />
     <None Include="Resources\frmPreguntas.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
