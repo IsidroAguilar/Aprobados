@@ -16,5 +16,10 @@ namespace QuienQuiereSerAprobado
         {
             InitializeComponent();
         }
+
+        private void frmMenu_Load(object sender, EventArgs e)
+        {
+            this.BackgroundImage = new Bitmap("QuienQuiereSerAprobado.Diseño.frmPreguntas.jpg");
+        }
     }
 }
