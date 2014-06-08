@@ -1,0 +1,8 @@
+c:\users\isidro\documents\visual studio 2013\Projects\QuienQuiereSerAprobado\QuienQuiereSerAprobado\bin\Debug\QuienQuiereSerAprobado.exe.config
+c:\users\isidro\documents\visual studio 2013\Projects\QuienQuiereSerAprobado\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.csprojResolveAssemblyReference.cache
+c:\users\isidro\documents\visual studio 2013\Projects\QuienQuiereSerAprobado\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.Properties.Resources.resources
+c:\users\isidro\documents\visual studio 2013\Projects\QuienQuiereSerAprobado\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.csproj.GenerateResource.Cache
+c:\users\isidro\documents\visual studio 2013\Projects\QuienQuiereSerAprobado\QuienQuiereSerAprobado\bin\Debug\QuienQuiereSerAprobado.exe
+c:\users\isidro\documents\visual studio 2013\Projects\QuienQuiereSerAprobado\QuienQuiereSerAprobado\bin\Debug\QuienQuiereSerAprobado.pdb
+c:\users\isidro\documents\visual studio 2013\Projects\QuienQuiereSerAprobado\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.exe
+c:\users\isidro\documents\visual studio 2013\Projects\QuienQuiereSerAprobado\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.pdb
