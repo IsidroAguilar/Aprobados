@@ -39,46 +39,7 @@ namespace QuienQuiereSerAprobado
             btnRespuesta3.Text = Datos.listaNumerosRespuestas[2].ToString();
             btnRespuesta4.Text = Datos.listaNumerosRespuestas[3].ToString();
 
-            if (btnRespuesta1.Text == "1")
-            {
-                Datos.GenerarRespuestaCorrecta();
-                btnRespuesta1.Text = Datos.respuesta.ToString();
-            }
-            else
-            {
-                
-            }
-
-            if (btnRespuesta2.Text == "1")
-            {
-                Datos.GenerarRespuestaCorrecta();
-                btnRespuesta2.Text = Datos.respuesta.ToString();
-            }
-            else
-            {
-                
-            }
-
-            if (btnRespuesta3.Text == "1")
-            {
-                Datos.GenerarRespuestaCorrecta();
-                btnRespuesta3.Text = Datos.respuesta.ToString();
-            }
-            else
-            {
-                
-            }
-
-            if (btnRespuesta4.Text == "1")
-            {
-                Datos.GenerarRespuestaCorrecta();
-                btnRespuesta4.Text = Datos.respuesta.ToString();
-            }
-            else
-            {
-                
-            }
-           
+            Datos.GenerarRespuestas();
         }
 
     }

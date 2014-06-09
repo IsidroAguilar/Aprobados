@@ -21,6 +21,9 @@ namespace QuienQuiereSerAprobado.Lógica
         public int numpregunta { get; set; }
         public string pregunta { get; set; }
         public string respuesta { get; set; }
+        public string opcion1 { get; set; }
+        public string opcion2 { get; set; }
+        public string opcion3 { get; set; }
         public int contador;
         #endregion
 
@@ -92,17 +95,16 @@ namespace QuienQuiereSerAprobado.Lógica
             command.Connection = conexion;
             try
             {
-                string consulta = "SELECT Respuesta FROM 1erSemestre WHERE ID = " + numpregunta;
-                command.CommandText = consulta;
                 conexion.Open();
+                OleDbDataReader read = null;
+                command = new OleDbCommand("SELECT * FROM 1erSemestre WHERE ID = " + numpregunta, conexion);
                 read = command.ExecuteReader();
-                if (read != null)
+                while (read.Read())
                 {
-                    while (read.Read())
-                    {
-                        respuesta = read.GetValue(0).ToString();
-                    }
-                    read.Close();
+                    respuesta = read["Respuesta"].ToString();
+                    opcion1 = read["Opcion1"].ToString();
+                    opcion2 = read["Opcion2"].ToString();
+                    opcion3 = read["Opcion3"].ToString();
                 }
                 conexion.Close();
             }
