@@ -17,7 +17,7 @@ namespace QuienQuiereSerAprobado
     {
         #region VARIABLES
         private int pregunta = 0;
-        OleDbCommand comand = new OleDbCommand();
+        OleDbCommand command = new OleDbCommand();
         OleDbDataReader read;
         OleDbConnection conexion = new OleDbConnection();
         #endregion
@@ -29,8 +29,8 @@ namespace QuienQuiereSerAprobado
         private void frmPreguntas_Load(object sender, EventArgs e)
         {
            conexion.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=BD.mdb;Persist Security Info=False";
-           comand.Connection = conexion;
-           BackgroundImage = QuienQuiereSerAprobado.Properties.Resources.frmPreguntas;
+           command.Connection = conexion;
+            BackgroundImage = QuienQuiereSerAprobado.Properties.Resources.frmPreguntasAzul;
 
             Random random = new Random();
             pregunta = random.Next(0, 11);
@@ -42,9 +42,9 @@ namespace QuienQuiereSerAprobado
             try
             {
                 string consulta = "SELECT Pregunta FROM 1erSemestre WHERE ID = " + pregunta;
-                comand.CommandText = consulta;
+                command.CommandText = consulta;
                 conexion.Open();
-                read = comand.ExecuteReader();
+                read = command.ExecuteReader();
                 if (read != null)
                 {
                     while (read.Read())
@@ -58,8 +58,8 @@ namespace QuienQuiereSerAprobado
             catch (Exception)
             {
                 read.Close();
-                conexion.Close();  
-                throw;
+                conexion.Close();
+                MessageBox.Show("Failed to connect to data source");
             }
         }
     }

@@ -98,9 +98,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Diseño\frmPreguntas.jpg" />
-    <None Include="Resources\PersonajeAzul.PNG" />
-    <None Include="Resources\PersonajeVerde.png" />
-    <None Include="Resources\frmPreguntas.jpg" />
+    <Content Include="Resources\Personajes\PersonajeAzul.PNG" />
+    <Content Include="Resources\Personajes\PersonajeGris.PNG" />
+    <Content Include="Resources\Personajes\PersonajeMorado.PNG" />
+    <Content Include="Resources\Personajes\PersonajeNaranja.PNG" />
+    <Content Include="Resources\Personajes\PersonajeRojo.PNG" />
+    <Content Include="Resources\Personajes\PersonajeVerde.png" />
+    <Content Include="Resources\Ventanas\frmPreguntasAzul.jpg" />
+    <Content Include="Resources\Ventanas\frmPreguntasGris.jpg" />
+    <Content Include="Resources\Ventanas\frmPreguntasMorado.jpg" />
+    <Content Include="Resources\Ventanas\frmPreguntasNaranja.jpg" />
+    <Content Include="Resources\Ventanas\frmPreguntasRojo.jpg" />
+    <Content Include="Resources\Ventanas\frmPreguntasVerde.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
