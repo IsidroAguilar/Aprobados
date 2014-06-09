@@ -11,7 +11,7 @@ using System.Data.OleDb;
 
 namespace QuienQuiereSerAprobado
 {
-            
+
 
     public partial class frmPreguntas : Form
     {
@@ -28,9 +28,8 @@ namespace QuienQuiereSerAprobado
 
         private void frmPreguntas_Load(object sender, EventArgs e)
         {
-           conexion.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=BD.mdb;Persist Security Info=False";
-           command.Connection = conexion;
-            BackgroundImage = QuienQuiereSerAprobado.Properties.Resources.frmPreguntasAzul;
+            conexion.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=BD.mdb;Persist Security Info=False";
+            command.Connection = conexion;
 
             Random random = new Random();
             pregunta = random.Next(0, 11);
