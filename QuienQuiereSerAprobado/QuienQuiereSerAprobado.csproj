@@ -97,20 +97,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Diseño\frmPreguntas.jpg" />
-    <Content Include="Resources\Image1.png" />
-    <Content Include="Resources\PersonajeAzul.PNG" />
-    <Content Include="Resources\PersonajeGris.PNG" />
-    <Content Include="Resources\PersonajeMorado.PNG" />
-    <Content Include="Resources\PersonajeNaranja.PNG" />
-    <Content Include="Resources\PersonajeRojo.PNG" />
-    <Content Include="Resources\PersonajeVerde.png" />
-    <Content Include="Resources\frmPreguntasAzul.jpg" />
-    <Content Include="Resources\frmPreguntasGris.jpg" />
-    <Content Include="Resources\frmPreguntasMorado.jpg" />
-    <Content Include="Resources\frmPreguntasNaranja.jpg" />
-    <Content Include="Resources\frmPreguntasRojo.jpg" />
-    <Content Include="Resources\frmPreguntasVerde.jpg" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

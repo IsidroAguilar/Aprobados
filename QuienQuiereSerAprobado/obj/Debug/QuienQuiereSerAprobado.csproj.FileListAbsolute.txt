@@ -10,3 +10,9 @@ C:\Users\Eduardo\Documents\Aprobados\QuienQuiereSerAprobado\obj\Debug\QuienQuier
 C:\Users\Eduardo\Documents\Aprobados\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.frmPreguntas.resources
 C:\Users\Eduardo\Documents\Aprobados\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.Properties.Resources.resources
 C:\Users\Eduardo\Documents\Aprobados\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.csproj.GenerateResource.Cache
+C:\Users\Eduardo\Documents\Aprobados\QuienQuiereSerAprobado\bin\Debug\QuienQuiereSerAprobado.exe.config
+C:\Users\Eduardo\Documents\Aprobados\QuienQuiereSerAprobado\bin\Debug\QuienQuiereSerAprobado.exe
+C:\Users\Eduardo\Documents\Aprobados\QuienQuiereSerAprobado\bin\Debug\QuienQuiereSerAprobado.pdb
+C:\Users\Eduardo\Documents\Aprobados\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.csprojResolveAssemblyReference.cache
+C:\Users\Eduardo\Documents\Aprobados\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.exe
+C:\Users\Eduardo\Documents\Aprobados\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.pdb

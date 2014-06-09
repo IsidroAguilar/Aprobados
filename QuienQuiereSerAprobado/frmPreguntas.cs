@@ -30,7 +30,7 @@ namespace QuienQuiereSerAprobado
         {
             conexion.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=BD.mdb;Persist Security Info=False";
             command.Connection = conexion;
-
+            BackgroundImage = Image.FromFile("Diseño/frmPreguntasNaranga.png");
             Random random = new Random();
             pregunta = random.Next(0, 11);
             RealizarPregunta();
@@ -49,16 +49,17 @@ namespace QuienQuiereSerAprobado
                     while (read.Read())
                     {
                         lblPregunta.Text = read.GetValue(0).ToString();
-                        read.Close();
+                       
                     }
+                    read.Close();
                 }
                 conexion.Close();
             }
             catch (Exception)
             {
+                MessageBox.Show("Failed to connect to data source");
                 read.Close();
                 conexion.Close();
-                MessageBox.Show("Failed to connect to data source");
             }
         }
     }
