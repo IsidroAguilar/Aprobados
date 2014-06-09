@@ -45,6 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgregarCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarCategorias.Designer.cs">
+      <DependentUpon>AgregarCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarPreguntas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarPreguntas.Designer.cs">
+      <DependentUpon>AgregarPreguntas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmConfiguracion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +79,12 @@
     <Compile Include="Lógica\clsMetodos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AgregarCategorias.resx">
+      <DependentUpon>AgregarCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarPreguntas.resx">
+      <DependentUpon>AgregarPreguntas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>

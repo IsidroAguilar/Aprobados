@@ -16,3 +16,13 @@ C:\Users\Eduardo\Documents\Aprobados\QuienQuiereSerAprobado\bin\Debug\QuienQuier
 C:\Users\Eduardo\Documents\Aprobados\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.csprojResolveAssemblyReference.cache
 C:\Users\Eduardo\Documents\Aprobados\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.exe
 C:\Users\Eduardo\Documents\Aprobados\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.pdb
+C:\Users\Javier\Documents\Humanidades\QuienQuiereSerAprobado\bin\Debug\QuienQuiereSerAprobado.exe.config
+C:\Users\Javier\Documents\Humanidades\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.exe
+C:\Users\Javier\Documents\Humanidades\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.pdb
+C:\Users\Javier\Documents\Humanidades\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.csprojResolveAssemblyReference.cache
+C:\Users\Javier\Documents\Humanidades\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.AgregarCategorias.resources
+C:\Users\Javier\Documents\Humanidades\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.AgregarPreguntas.resources
+C:\Users\Javier\Documents\Humanidades\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.frmMenu.resources
+C:\Users\Javier\Documents\Humanidades\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.frmPreguntas.resources
+C:\Users\Javier\Documents\Humanidades\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.Properties.Resources.resources
+C:\Users\Javier\Documents\Humanidades\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.csproj.GenerateResource.Cache

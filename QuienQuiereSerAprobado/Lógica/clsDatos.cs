@@ -69,7 +69,7 @@ namespace QuienQuiereSerAprobado.Lógica
                 read = command.ExecuteReader();
                 if (read != null)
                 {
-                    while (read.Read())
+                    while (read.Read()) //read.NextResult() ?
                     {
                         pregunta = read.GetValue(0).ToString();
                     }
