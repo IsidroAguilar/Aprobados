@@ -26,5 +26,5 @@ C:\Users\Javier\Documents\Humanidades\QuienQuiereSerAprobado\obj\Debug\QuienQuie
 C:\Users\Javier\Documents\Humanidades\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.frmPreguntas.resources
 C:\Users\Javier\Documents\Humanidades\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.Properties.Resources.resources
 C:\Users\Javier\Documents\Humanidades\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.csproj.GenerateResource.Cache
-C:\Users\Eduardo\Documents\Aprobados\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.AgregarCategorias.resources
-C:\Users\Eduardo\Documents\Aprobados\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.AgregarPreguntas.resources
+C:\Users\Isidro\Source\Repos\Aprobados\QuienQuiereSerAprobado\bin\Debug\QuienQuiereSerAprobado.exe.config
+C:\Users\Isidro\Source\Repos\Aprobados\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.exe
