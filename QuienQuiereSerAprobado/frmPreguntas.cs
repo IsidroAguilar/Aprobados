@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using QuienQuiereSerAprobado.Lógica;
 
 namespace QuienQuiereSerAprobado
 {
@@ -15,12 +16,11 @@ namespace QuienQuiereSerAprobado
 
     public partial class frmPreguntas : Form
     {
-        #region VARIABLES
-        private int pregunta = 0;
-        OleDbCommand command = new OleDbCommand();
-        OleDbDataReader read;
-        OleDbConnection conexion = new OleDbConnection();
+        #region OBJETOS
+        clsDatos Datos = new clsDatos();
+
         #endregion
+
         public frmPreguntas()
         {
             InitializeComponent();
@@ -28,40 +28,59 @@ namespace QuienQuiereSerAprobado
 
         private void frmPreguntas_Load(object sender, EventArgs e)
         {
-            conexion.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=BD.mdb;Persist Security Info=False";
-            command.Connection = conexion;
-            BackgroundImage = Image.FromFile("Diseño/frmPreguntasNaranga.png");
-            Random random = new Random();
-            pregunta = random.Next(0, 11);
-            RealizarPregunta();
+            Datos.listaNumerosRespuestas.Clear();
+            Datos.contador = 0;
+            BackgroundImage = Image.FromFile("Diseño/frmPreguntasNaranja.png");
+            Datos.GenerarRandomPregunta();
+            lblPregunta.Text = Datos.pregunta;
+            Datos.GenerarRandomRespuestas();
+            btnRespuesta1.Text = Datos.listaNumerosRespuestas[0].ToString();
+            btnRespuesta2.Text = Datos.listaNumerosRespuestas[1].ToString();
+            btnRespuesta3.Text = Datos.listaNumerosRespuestas[2].ToString();
+            btnRespuesta4.Text = Datos.listaNumerosRespuestas[3].ToString();
+
+            if (btnRespuesta1.Text == "1")
+            {
+                Datos.GenerarRespuestaCorrecta();
+                btnRespuesta1.Text = Datos.respuesta.ToString();
+            }
+            else
+            {
+                
+            }
+
+            if (btnRespuesta2.Text == "1")
+            {
+                Datos.GenerarRespuestaCorrecta();
+                btnRespuesta2.Text = Datos.respuesta.ToString();
+            }
+            else
+            {
+                
+            }
+
+            if (btnRespuesta3.Text == "1")
+            {
+                Datos.GenerarRespuestaCorrecta();
+                btnRespuesta3.Text = Datos.respuesta.ToString();
+            }
+            else
+            {
+                
+            }
+
+            if (btnRespuesta4.Text == "1")
+            {
+                Datos.GenerarRespuestaCorrecta();
+                btnRespuesta4.Text = Datos.respuesta.ToString();
+            }
+            else
+            {
+                
+            }
+           
         }
 
-        private void RealizarPregunta()
-        {
-            try
-            {
-                string consulta = "SELECT Pregunta FROM 1erSemestre WHERE ID = " + pregunta;
-                command.CommandText = consulta;
-                conexion.Open();
-                read = command.ExecuteReader();
-                if (read != null)
-                {
-                    while (read.Read())
-                    {
-                        lblPregunta.Text = read.GetValue(0).ToString();
-                       
-                    }
-                    read.Close();
-                }
-                conexion.Close();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Failed to connect to data source");
-                read.Close();
-                conexion.Close();
-            }
-        }
     }
 
 }

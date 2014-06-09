@@ -48,7 +48,7 @@
             // 
             // btnRespuesta2
             // 
-            this.btnRespuesta2.Location = new System.Drawing.Point(32, 290);
+            this.btnRespuesta2.Location = new System.Drawing.Point(32, 250);
             this.btnRespuesta2.Name = "btnRespuesta2";
             this.btnRespuesta2.Size = new System.Drawing.Size(75, 23);
             this.btnRespuesta2.TabIndex = 1;
@@ -57,7 +57,7 @@
             // 
             // btnRespuesta3
             // 
-            this.btnRespuesta3.Location = new System.Drawing.Point(182, 221);
+            this.btnRespuesta3.Location = new System.Drawing.Point(32, 279);
             this.btnRespuesta3.Name = "btnRespuesta3";
             this.btnRespuesta3.Size = new System.Drawing.Size(75, 23);
             this.btnRespuesta3.TabIndex = 2;
@@ -66,7 +66,7 @@
             // 
             // btnRespuesta4
             // 
-            this.btnRespuesta4.Location = new System.Drawing.Point(182, 290);
+            this.btnRespuesta4.Location = new System.Drawing.Point(32, 308);
             this.btnRespuesta4.Name = "btnRespuesta4";
             this.btnRespuesta4.Size = new System.Drawing.Size(75, 23);
             this.btnRespuesta4.TabIndex = 3;

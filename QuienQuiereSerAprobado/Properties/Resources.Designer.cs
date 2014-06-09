@@ -59,15 +59,5 @@ namespace QuienQuiereSerAprobado.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap frmPreguntasNaranga {
-            get {
-                object obj = ResourceManager.GetObject("frmPreguntasNaranga", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
