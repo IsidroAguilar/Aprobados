@@ -66,13 +66,13 @@ namespace QuienQuiereSerAprobado.Lógica
             command.Connection = conexion;
             try
             {
-                string consulta = "SELECT Respuesta FROM 1erSemestre WHERE ID = " + numpregunta;
+                string consulta = "SELECT Pregunta FROM 1erSemestre WHERE ID = " + numpregunta;
                 command.CommandText = consulta;
                 conexion.Open();
                 read = command.ExecuteReader();
                 if (read != null)
                 {
-                    while (read.Read())
+                    while (read.Read()) //read.NextResult() ?
                     {
                         pregunta = read.GetValue(0).ToString();
                     }

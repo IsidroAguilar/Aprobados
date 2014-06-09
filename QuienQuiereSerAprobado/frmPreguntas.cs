@@ -40,8 +40,13 @@ namespace QuienQuiereSerAprobado
             btnRespuesta4.Text = Datos.listaNumerosRespuestas[3].ToString();
 
             Datos.GenerarRespuestas();
+
+            btnRespuesta1.Text = Datos.respuesta;
+            btnRespuesta2.Text = Datos.opcion1;
+            btnRespuesta3.Text = Datos.opcion2;
+            btnRespuesta4.Text = Datos.opcion3;
         }
 
-    }
+    }   
 
 }
