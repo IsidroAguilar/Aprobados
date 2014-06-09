@@ -15,3 +15,4 @@ C:\Users\Eduardo\Documents\Aprobados\QuienQuiereSerAprobado\obj\Debug\QuienQuier
 C:\Users\Eduardo\Documents\Aprobados\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.csproj.GenerateResource.Cache
 C:\Users\Eduardo\Documents\Aprobados\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.exe
 C:\Users\Eduardo\Documents\Aprobados\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.pdb
+C:\Users\Eduardo\Documents\Aprobados\QuienQuiereSerAprobado\obj\Debug\QuienQuiereSerAprobado.csprojResolveAssemblyReference.cache

@@ -7,11 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace QuienQuiereSerAprobado
 {
+            
+
     public partial class frmPreguntas : Form
     {
+        #region VARIABLES
+        private int pregunta = 0;
+        OleDbCommand comand = new OleDbCommand();
+        OleDbDataReader read;
+        OleDbConnection conexion = new OleDbConnection();
+        #endregion
         public frmPreguntas()
         {
             InitializeComponent();
@@ -19,7 +28,40 @@ namespace QuienQuiereSerAprobado
 
         private void frmPreguntas_Load(object sender, EventArgs e)
         {
-            
+           conexion.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=BD.mdb;Persist Security Info=False";
+           comand.Connection = conexion;
+           BackgroundImage = QuienQuiereSerAprobado.Properties.Resources.frmPreguntas;
+
+            Random random = new Random();
+            pregunta = random.Next(0, 11);
+            RealizarPregunta();
+        }
+
+        private void RealizarPregunta()
+        {
+            try
+            {
+                string consulta = "SELECT Pregunta FROM 1erSemestre WHERE ID = " + pregunta;
+                comand.CommandText = consulta;
+                conexion.Open();
+                read = comand.ExecuteReader();
+                if (read != null)
+                {
+                    while (read.Read())
+                    {
+                        lblPregunta.Text = read.GetValue(0).ToString();
+                        read.Close();
+                    }
+                }
+                conexion.Close();
+            }
+            catch (Exception)
+            {
+                read.Close();
+                conexion.Close();  
+                throw;
+            }
         }
     }
+
 }

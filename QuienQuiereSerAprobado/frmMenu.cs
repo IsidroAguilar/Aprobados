@@ -21,5 +21,12 @@ namespace QuienQuiereSerAprobado
         {
             
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmPreguntas nfrm = new frmPreguntas();
+            nfrm.Show();
+            this.Hide();
+        }
     }
 }

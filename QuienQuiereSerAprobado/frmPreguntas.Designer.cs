@@ -32,6 +32,7 @@
             this.btnRespuesta2 = new System.Windows.Forms.Button();
             this.btnRespuesta3 = new System.Windows.Forms.Button();
             this.btnRespuesta4 = new System.Windows.Forms.Button();
+            this.lblPregunta = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnRespuesta1
@@ -72,12 +73,22 @@
             this.btnRespuesta4.Text = "Respuesta4";
             this.btnRespuesta4.UseVisualStyleBackColor = true;
             // 
+            // lblPregunta
+            // 
+            this.lblPregunta.AutoSize = true;
+            this.lblPregunta.Location = new System.Drawing.Point(43, 92);
+            this.lblPregunta.Name = "lblPregunta";
+            this.lblPregunta.Size = new System.Drawing.Size(50, 13);
+            this.lblPregunta.TabIndex = 4;
+            this.lblPregunta.Text = "Pregunta";
+            // 
             // frmPreguntas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(652, 402);
+            this.Controls.Add(this.lblPregunta);
             this.Controls.Add(this.btnRespuesta4);
             this.Controls.Add(this.btnRespuesta3);
             this.Controls.Add(this.btnRespuesta2);
@@ -86,6 +97,7 @@
             this.Text = "frmPreguntas";
             this.Load += new System.EventHandler(this.frmPreguntas_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -95,6 +107,7 @@
         private System.Windows.Forms.Button btnRespuesta2;
         private System.Windows.Forms.Button btnRespuesta3;
         private System.Windows.Forms.Button btnRespuesta4;
+        private System.Windows.Forms.Label lblPregunta;
 
     }
 }
