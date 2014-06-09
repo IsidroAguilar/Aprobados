@@ -41,10 +41,95 @@ namespace QuienQuiereSerAprobado
 
             Datos.GenerarRespuestas();
 
-            btnRespuesta1.Text = Datos.respuesta;
-            btnRespuesta2.Text = Datos.opcion1;
-            btnRespuesta3.Text = Datos.opcion2;
-            btnRespuesta4.Text = Datos.opcion3;
+            #region BOTÓN 1 POSIBILIDADES RESPUESTAS
+            if (btnRespuesta1.Text == "1") // Respuesta Correcta
+            {
+                btnRespuesta1.Text = Datos.respuesta;
+            }
+
+            if (btnRespuesta1.Text == "2") // Opción 1
+            {
+                btnRespuesta1.Text = Datos.opcion1;
+            }
+
+            if (btnRespuesta1.Text == "3") // Opción 2
+            {
+                btnRespuesta1.Text = Datos.opcion2;
+            }
+
+            if (btnRespuesta1.Text == "4") // Opción 3
+            {
+                btnRespuesta1.Text = Datos.opcion3;
+            }
+            #endregion
+
+            #region BOTÓN 2 POSIBILIDADES RESPUESTAS
+            if (btnRespuesta2.Text == "1") // Respuesta Correcta
+            {
+                btnRespuesta2.Text = Datos.respuesta;
+            }
+
+            if (btnRespuesta2.Text == "2") // Opción 1
+            {
+                btnRespuesta2.Text = Datos.opcion1;
+            }
+
+            if (btnRespuesta2.Text == "3") // Opción 2
+            {
+                btnRespuesta2.Text = Datos.opcion2;
+            }
+
+            if (btnRespuesta2.Text == "4") // Opción 3
+            {
+                btnRespuesta2.Text = Datos.opcion3;
+            }
+            #endregion
+
+            #region BOTÓN 3 POSIBILIDADES RESPUESTAS
+            if (btnRespuesta3.Text == "1") // Respuesta Correcta
+            {
+                btnRespuesta3.Text = Datos.respuesta;
+            }
+
+            if (btnRespuesta3.Text == "2") // Opción 1
+            {
+                btnRespuesta3.Text = Datos.opcion1;
+            }
+
+            if (btnRespuesta3.Text == "3") // Opción 2
+            {
+                btnRespuesta3.Text = Datos.opcion2;
+            }
+
+            if (btnRespuesta3.Text == "4") // Opción 3
+            {
+                btnRespuesta3.Text = Datos.opcion3;
+            }
+            #endregion
+
+            #region BOTÓN 4 POSIBILIDADES RESPUESTAS
+            if (btnRespuesta4.Text == "1") // Respuesta Correcta
+            {
+                btnRespuesta4.Text = Datos.respuesta;
+            }
+
+            if (btnRespuesta4.Text == "2") // Opción 1
+            {
+                btnRespuesta4.Text = Datos.opcion1;
+            }
+
+            if (btnRespuesta4.Text == "3") // Opción 2
+            {
+                btnRespuesta4.Text = Datos.opcion2;
+            }
+
+            if (btnRespuesta4.Text == "4") // Opción 3
+            {
+                btnRespuesta4.Text = Datos.opcion3;
+            }
+            #endregion
+
+
         }
 
     }   
