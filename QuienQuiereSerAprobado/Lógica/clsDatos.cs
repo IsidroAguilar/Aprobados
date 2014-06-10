@@ -15,8 +15,8 @@ namespace QuienQuiereSerAprobado.Lógica
         OleDbConnection conexion = new OleDbConnection();
 
         #region "VARIABLES LALO"
-        public List<int> listaNumerosRespuestas = new List<int>(4);
-        private List<int> listaNumerosPreguntas = new List<int>(4);
+        public List<int> listaNumerosRespuestas = new List<int>();
+        private static List<int> listaNumerosPreguntas = new List<int>();
         public int maximo { get; set; }
         public int numpregunta { get; set; }
         public string pregunta { get; set; }
@@ -24,7 +24,8 @@ namespace QuienQuiereSerAprobado.Lógica
         public string opcion1 { get; set; }
         public string opcion2 { get; set; }
         public string opcion3 { get; set; }
-        public int contador;
+        public int contadorPreguntas;
+        public int contadorRespuestas;
         #endregion
 
 
@@ -36,19 +37,27 @@ namespace QuienQuiereSerAprobado.Lógica
         public void GenerarRandomPregunta() //Se genera el número random de pregunta de la 1 hasta X 
         {
             int aleatorio = random.Next(1, 11);
-            while (listaNumerosPreguntas.Contains(aleatorio)) // Si se repite el número de pregunta se genera un nuevo número aleatorio
+
+            if (contadorPreguntas == 11)
+            {
+                throw new Exception("Error");
+            }
+            while (listaNumerosPreguntas.Contains(aleatorio))
+            // Si se repite el número de pregunta se genera un nuevo número aleatorio
             {
                 aleatorio = random.Next(1, 11);
             }
             listaNumerosPreguntas.Add(aleatorio); // Se agrega el número de pregunta a la lista.
             numpregunta = aleatorio; // Es la variable que definirá el número de pregunta en el juego.
-            RealizarPregunta(); // Recurre a la consulta para regresar la pregunta.
+            contadorPreguntas++;
+            RealizarPregunta(); // Recurre a la consulta para regresar la pregunta. 
+
         }
 
         public void GenerarRandomRespuestas() //Se genera el número random de respuestas de la 1 hasta 4 (Con el fin de que queden en desordén las repsuestas) 
         {
             int aleatorio = random.Next(1, 5);
-            while (contador < 4)
+            while (contadorRespuestas < 4)
             {
                 while (listaNumerosRespuestas.Contains(aleatorio))
                 // Si se repite la posición de respuesta se genera un nuevo número aleatorio
@@ -56,7 +65,7 @@ namespace QuienQuiereSerAprobado.Lógica
                     aleatorio = random.Next(1, 5);
                 }
                 listaNumerosRespuestas.Add(aleatorio); // Se agrega posición de respuesta a la lista.
-                contador++;
+                contadorRespuestas++;
             }
         }
 

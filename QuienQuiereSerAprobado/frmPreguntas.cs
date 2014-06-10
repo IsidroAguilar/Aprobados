@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mime;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -29,7 +30,7 @@ namespace QuienQuiereSerAprobado
         private void frmPreguntas_Load(object sender, EventArgs e)
         {
             Datos.listaNumerosRespuestas.Clear();
-            Datos.contador = 0;
+            Datos.contadorRespuestas = 0;
             BackgroundImage = Image.FromFile("Diseño/frmPreguntasNaranja.png");
             Datos.GenerarRandomPregunta();
             lblPregunta.Text = Datos.pregunta;
@@ -130,6 +131,61 @@ namespace QuienQuiereSerAprobado
             #endregion
 
 
+        }
+
+        private void btnRespuesta1_Click(object sender, EventArgs e)
+        {
+            if (btnRespuesta1.Text == Datos.respuesta)
+            {
+                btnRespuesta1.ForeColor = Color.LimeGreen;
+            }
+            else
+            {
+                btnRespuesta1.ForeColor = Color.Red;
+            }
+        }
+
+        private void btnRespuesta2_Click(object sender, EventArgs e)
+        {
+            if (btnRespuesta2.Text == Datos.respuesta)
+            {
+                btnRespuesta2.ForeColor = Color.LimeGreen;
+            }
+            else
+            {
+                btnRespuesta2.ForeColor = Color.Red;
+            }
+        }
+
+        private void btnRespuesta3_Click(object sender, EventArgs e)
+        {
+            if (btnRespuesta3.Text == Datos.respuesta)
+            {
+                btnRespuesta3.ForeColor = Color.LimeGreen;
+            }
+            else
+            {
+                btnRespuesta3.ForeColor = Color.Red;
+            }
+        }
+
+        private void btnRespuesta4_Click(object sender, EventArgs e)
+        {
+            if (btnRespuesta4.Text == Datos.respuesta)
+            {
+                btnRespuesta4.ForeColor = Color.LimeGreen;
+            }
+            else
+            {
+                btnRespuesta4.ForeColor = Color.Red;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmMenu frm = new frmMenu();
+            this.Hide();
+            frm.Show();
         }
 
     }   
