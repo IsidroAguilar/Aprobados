@@ -137,15 +137,11 @@ namespace QuienQuiereSerAprobado
         {
             if (btnRespuesta1.Text == Datos.respuesta)
             {
-                
                 btnRespuesta1.Enabled = false;
                 btnRespuesta1.ForeColor = Color.LimeGreen;
                 btnRespuesta2.ForeColor = Color.Red;
-
                 btnRespuesta3.ForeColor = Color.Red;
-
                 btnRespuesta4.ForeColor = Color.Red;
-
             }
             else
             {
