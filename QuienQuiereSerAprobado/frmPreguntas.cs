@@ -137,7 +137,15 @@ namespace QuienQuiereSerAprobado
         {
             if (btnRespuesta1.Text == Datos.respuesta)
             {
+                
+                btnRespuesta1.Enabled = false;
                 btnRespuesta1.ForeColor = Color.LimeGreen;
+                btnRespuesta2.ForeColor = Color.Red;
+
+                btnRespuesta3.ForeColor = Color.Red;
+
+                btnRespuesta4.ForeColor = Color.Red;
+
             }
             else
             {
@@ -150,6 +158,13 @@ namespace QuienQuiereSerAprobado
             if (btnRespuesta2.Text == Datos.respuesta)
             {
                 btnRespuesta2.ForeColor = Color.LimeGreen;
+
+                btnRespuesta1.ForeColor = Color.Red;
+
+                btnRespuesta3.ForeColor = Color.Red;
+
+                btnRespuesta4.ForeColor = Color.Red;
+     
             }
             else
             {
@@ -162,6 +177,13 @@ namespace QuienQuiereSerAprobado
             if (btnRespuesta3.Text == Datos.respuesta)
             {
                 btnRespuesta3.ForeColor = Color.LimeGreen;
+
+                btnRespuesta1.ForeColor = Color.Red;
+
+                btnRespuesta2.ForeColor = Color.Red;
+
+                btnRespuesta4.ForeColor = Color.Red;
+
             }
             else
             {
@@ -174,6 +196,13 @@ namespace QuienQuiereSerAprobado
             if (btnRespuesta4.Text == Datos.respuesta)
             {
                 btnRespuesta4.ForeColor = Color.LimeGreen;
+
+                btnRespuesta1.ForeColor = Color.Red;
+
+                btnRespuesta3.ForeColor = Color.Red;
+
+                btnRespuesta2.ForeColor = Color.Red;
+
             }
             else
             {
